@@ -1,0 +1,1 @@
+-define(NEWBIE_COPY_MAP_DATA_ID_LIST, [1, 2, 3]).

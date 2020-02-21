@@ -1,0 +1,49 @@
+[
+{server_id,2},
+{serverid_other,[]},
+{server_sign,"1234567890"},
+{server_version, 1},
+{server_accept_client_version_min, 1},
+{server_accept_client_max_count, 1200},
+{debug_level, 4},
+
+{db_gs, db_gs},
+{db_gs_host, "127.0.0.1"},
+{db_gs_port, 3306},
+{db_gs_user, "root"},
+{db_gs_pass, "mengyan"},
+{db_gs_name, "dragongamedata"},
+
+
+{db_log, db_log},
+{db_log_host, "127.0.0.1"},
+{db_log_port, 3306},
+{db_log_user, "root"},
+{db_log_pass, "mengyan"},
+{db_log_name, "dragongamelog"},
+
+{db_public, db_public},
+{db_public_host, "127.0.0.1"},
+{db_public_port, 3306},
+{db_public_user, "root"},
+{db_public_pass, "mengyan"},
+{db_public_name, "dragonlogindata"},
+
+{log_path,"../log/"},
+
+{server_open_timestamp, 0},
+{server_open_award_days, 15},
+{server_isonline, 1},
+{level_activity_flag,  true},
+
+{pay_rebate_end_timestamp,  1400515200},
+
+{tcp_accept_user_port, 6669},
+{tcp_accept_user_ip, "192.168.1.115"},
+{gameserver_display_name, "nothing"},
+
+{tcp_accept_gs_port,20012},
+{tcp_accept_gs_ip,"192.168.1.115"},
+{cross_server_flag, 0},
+{cross_node, 'test@127.0.0.1'}
+].

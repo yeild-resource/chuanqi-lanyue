@@ -1,0 +1,4 @@
+工具/ApkIDE/Work
+*.pid
+mysql/data/*.err
+*.log

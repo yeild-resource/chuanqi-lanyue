@@ -1,0 +1,200 @@
+-ifndef(itemLog_hrl).
+
+-define(itemLog_hrl, 1).
+
+-include("serverStr.hrl").
+
+%% event 的log日志
+%%(增加和减少可以使用同一个，通过数量的正负判断是增加还是减少)
+-define(Item_Change_Content_DeleteItem_Compose, 1). %% 合成消耗物品
+-define(Item_Change_Content_DeleteItem_Inlay, 2). %% 镶嵌消耗物品
+-define(Item_Change_Content_DeleteItem_Strength, 3). %% 强化消耗物品
+-define(Item_Change_Content_DeleteItem_MineLucky, 4). %%探矿消耗物品
+-define(Item_Change_Content_DeleteItem_Ghost, 5). %%神魔界消耗物品
+-define(Item_Change_Content_DeleteItem_RecoverLife, 6). %%复活消耗物品
+-define(Item_Change_Content_DeleteItem_CreateLeague, 7). %%创建帮会消耗物品
+-define(Item_Change_Content_PickUpItem, 8). %%玩家捡起物品
+-define(Item_Change_Content_AddItem_AreaAward, 9). %%竞技场奖励物品
+-define(Item_Change_Content_AddItem_IndianaBox, 10). %%夺宝奇兵获取宝箱
+-define(Item_Change_Content_AddItem_DoneDrawLucky, 11). %%通关副本获取奖励
+-define(Item_Change_Content_AddItem_DoneLeagueTreasureBox, 12). %%通关帮会副本获取奖励
+-define(Item_Change_Content_AddItem_RushMissionFirstAward, 13). %%闯天关首杀奖励
+-define(Item_Change_Content_AddItem_DecCompose, 14). %%分解装备
+-define(Item_Change_Content_AddItem_LevelAward, 15). %%等级奖励
+-define(Item_Change_Content_AddItem_Mine, 16). %%挖矿获取物品
+-define(Item_Change_Content_AddItem_OpenServerAward, 17). %%开服登陆奖励
+-define(Item_Change_Content_AddItem_RankFightAward, 18). %%战斗力排名奖励
+-define(Item_Change_Content_AddItem_RankLevelAward, 19). %%等级排名奖励
+-define(Item_Change_Content_AddItem_RankLeagueAward, 20). %%帮会排名奖励
+-define(Item_Change_Content_AddItem_TaskAward, 21). %%任务获得奖励
+-define(Item_Change_Content_AddItem_TimeBox, 22). %%在线奖励
+-define(Item_Change_Content_AddItem_StoreBuy, 23). %%商城购买
+-define(Item_Change_Content_AddItem_NpcBuy, 24). %%NPC购买
+-define(Item_Change_Content_AddItem_VipEveryAward, 25). %% vip每天奖励
+-define(Item_Change_Content_AddItem_WheelAward, 26). %% 转盘奖励
+-define(Item_Change_Content_DeleteItem_Delete, 27). %% 删除物品
+-define(Item_Change_Content_AddItem_Gift, 28). %% 激活码奖励物品
+-define(Item_Change_Content_AddItem_VipLevelAward, 29). %% vip等级奖励物品
+-define(Item_Change_Content_AddItem_SellItem, 30). %% 玩家出售物品
+-define(Item_Change_Content_AddItem_Sort, 31). %% 玩家整理背包
+-define(Item_Change_Content_AddItem_Drop, 32). %% 玩家掉落物品
+-define(Item_Change_Content_AddItem_Equip, 33). %% 玩家穿上装备
+-define(Item_Change_Content_AddItem_GM, 34). %% GM添加物品
+-define(Item_Change_Content_AddItem_SpaceRing2Bag, 35). %% 空间戒指到背包
+-define(Item_Change_Content_AddItem_MineHouse2Bag, 36). %% 探矿仓库到背包
+-define(Item_Change_Content_AddItem_WareHouse2Bag, 37). %% 仓库到背包
+-define(Item_Change_Content_AddItem_Trade, 38). %% 交易物品
+-define(Item_Change_Content_AddItem_Bag2SpaceRing, 39). %% 背包到空间戒指
+-define(Item_Change_Content_AddItem_Bag2WareHouse, 40). %% 背包到仓库
+-define(Item_Change_Content_DelItem_RankFightAward, 41). %%战斗力排名奖励
+-define(Item_Change_Content_DelItem_RankLevelAward, 42). %%等级排名奖励
+-define(Item_Change_Content_DelItem_RankLeagueAward, 43). %%帮会排名奖励
+-define(Item_Change_Content_UseBoxItem, 44). %%使用宝箱
+-define(Item_Change_Content_VipBuyItem, 45). %%vip 快速购买
+-define(Item_Change_Content_VipFirstPay, 46). %%vip 首充值奖励
+-define(Item_Change_Content_VipEachPay, 47). %%vip 单笔充值奖励
+-define(Item_Change_Content_AddItem_SignIn, 48). %%签到奖励
+-define(Item_Change_Content_AddItem_Mail, 50). %%邮件
+-define(Item_Change_Content_AddItem_ShopPack, 51).%%商城礼包
+-define(Item_Change_Content_AddItem_Huang_Cheng_Zheng_Ba, 52). %%皇城争霸
+-define(Item_Change_Content_AddItem_League_Shop, 53). %%帮会商城
+-define(Item_Change_Content_AddItem_gem_exchange, 54). %%宝石兑换
+-define(Item_Change_Content_DelItem_gem_smelt, 55). %%宝石熔炼
+-define(Item_Change_Content_AddItem_uc_vip, 56). %% uc vip 礼包
+-define(Item_Change_Content_ItemExchange, 57). %% 兑换物品
+-define(Item_Change_Content_PayRelated, 58). %% 日充累充
+-define(Item_Change_Content_DeleteItem_Flower, 59). %%赠送鲜花消耗物品
+-define(Item_Change_Content_Valentine, 60). %%七夕巧果
+-define(Item_Change_Content_UseItem, 61). %%使用物品
+-define(Item_Change_Content_IllWealth, 62). %%天降横财获得
+-define(Item_Change_Content_Wing, 63). %%光翼进阶
+-define(Item_Change_Content_Clean, 64). %%限时道具清理
+-define(Item_Change_Content_Everyday, 65). %%每日必做奖励
+-define(Item_Change_Content_UpdateGift, 66). %%更新奖励
+-define(Item_Change_Content_Delete_SalesRoom, 67).  %% 拍卖行拍卖
+-define(Item_Change_Content_Add_SalesRoom, 68). %% 购买拍卖行里的物品
+-define(Item_Change_Content_VipEveryDayPay, 69). %%vip 每日充值奖励
+-define(Item_Change_Content_Advance_Material, 70).      %% 装备洗练的材料
+-define(Item_Change_Content_Advance_Special_Material, 71).  %% 装备洗练的特殊材料（神符）
+-define(Item_Change_Content_Frined, 72).  %% 打探
+-define(Item_Change_Content_Delete_Add_WareHouse, 73).  %% 空间戒指增加仓库消耗
+-define(Item_Change_Content_Add_League_Award, 74).  %% 公会奖励
+-define(Item_Change_Content_DeleteItem_EquipAdvance, 75). %%装备洗炼消耗道具
+-define(Item_Change_Content_Pet, 76). %%宠物激活
+-define(Item_Change_Content_EquipUpgrade, 77). %%装备进阶
+-define(Item_Change_Content_ServerActivity, 78). %%开服庆典
+-define(Item_Change_Content_SaleTrade, 79). %%交易行
+-define(Item_Change_Content_Invite, 80). %%邀请
+-define(Item_Change_Content_Liveness, 81). %%活跃度
+-define(Item_Change_Content_LimitBug, 82). %%限时抢购
+-define(Item_Change_Content_Achievement, 83). %%成就
+-define(Item_Change_Content_Zhaocai, 84). %%招财宝
+-define(Item_Change_Content_DeleteItem_EnterCopy, 85). %%进入副本扣除道具
+-define(Item_Change_Content_Promote, 86). %%装备进阶
+-define(Item_Change_Content_Compose, 87). %%装备合成
+-define(Item_Change_Content_Part_Open_Hole, 88). %%开孔
+-define(Item_Change_Content_Escort, 89). %%护送美女
+-define(Item_Change_Content_GetImpactLevelAward, 90). %% 领取冲级达人奖励
+-define(Item_Change_Content_GetTotalChargeAward, 91). %% 领取累计充值奖励
+-define(Item_Change_Content_LuxurySignin,92). %%豪华签到.
+-define(Item_Change_Content_ExchangeWord, 93). %% 夺宝奇兵
+-define(Item_Change_Content_QuanMinBoss, 94). %% 全民Boss
+-define(Item_Change_Content_SevenDaysCheer, 95). %% 新服七天乐
+-define(Item_Change_Content_LeagueSignIn, 96). %% 帮会签到
+-define(Item_Change_Content_ItemCompound, 97). %% 道具合成
+-define(Item_Change_Content_Huiyaoshi_Smelt, 98). %% 辉耀石熔炼
+-define(Item_Change_Content_EquipmentRecycle, 99). %% 装备回收
+
+
+%% content 的log日志
+-define(Item_Change_Content_DeleteItem_Compose_Content, ?ServerStr(15)). %%
+-define(Item_Change_Content_DeleteItem_Inlay_Content, ?ServerStr(16)). %%
+-define(Item_Change_Content_DeleteItem_Strength_Content, ?ServerStr(17)). %%
+-define(Item_Change_Content_DeleteItem_MineLucky_Content, ?ServerStr(18)). %%
+-define(Item_Change_Content_DeleteItem_Ghost_Content, ?ServerStr(19)). %%
+-define(Item_Change_Content_DeleteItem_RecoverLife_Content, ?ServerStr(20)). %%
+-define(Item_Change_Content_DeleteItem_CreateLeague_Content, ?ServerStr(21)). %%
+-define(Item_Change_Content_PickUpItem_Content, ?ServerStr(22)). %%玩家捡起物品
+-define(Item_Change_Content_AddItem_AreaAward_Content, ?ServerStr(23)). %%竞技场奖励物品
+-define(Item_Change_Content_AddItem_IndianaBox_Content, ?ServerStr(24)). %%夺宝奇兵获取宝箱
+-define(Item_Change_Content_AddItem_DoneDrawLucky_Content, ?ServerStr(25)). %%通关副本获取奖励
+-define(Item_Change_Content_AddItem_DoneLeagueTreasureBox_Content, ?ServerStr(26)). %%通关帮会副本获取奖励
+-define(Item_Change_Content_AddItem_RushMissionFirstAward_Content, ?ServerStr(27)). %%闯天关首杀奖励
+-define(Item_Change_Content_AddItem_DecCompose_Content, ?ServerStr(28)). %%分解装备
+-define(Item_Change_Content_AddItem_LevelAward_Content, ?ServerStr(29)). %%等级奖励
+-define(Item_Change_Content_AddItem_Mine_Content, ?ServerStr(30)). %%挖矿获取物品
+-define(Item_Change_Content_AddItem_OpenServerAward_Content, ?ServerStr(31)). %%开服登陆奖励
+-define(Item_Change_Content_AddItem_RankFightAward_Content, ?ServerStr(32)). %%战斗力排名奖励
+-define(Item_Change_Content_AddItem_RankLevelAward_Content, ?ServerStr(33)). %%等级排名奖励
+-define(Item_Change_Content_AddItem_RankLeagueAward_Content, ?ServerStr(34)). %%帮会排名奖励
+-define(Item_Change_Content_AddItem_TaskAward_Content, ?ServerStr(35)). %%任务获得奖励
+-define(Item_Change_Content_AddItem_TimeBox_Content, ?ServerStr(36)). %%在线奖励
+-define(Item_Change_Content_AddItem_StoreBuy_Content, ?ServerStr(37)). %%商城购买
+-define(Item_Change_Content_AddItem_NpcBuy_Content, ?ServerStr(38)). %%NPC购买
+-define(Item_Change_Content_AddItem_VipEveryAward_Content, ?ServerStr(39)). %% vip每天奖励
+-define(Item_Change_Content_AddItem_WheelAward_Content, ?ServerStr(40)). %% 转盘奖励
+-define(Item_Change_Content_DeleteItem_Delete_Content, ?ServerStr(41)). %% 删除物品
+-define(Item_Change_Content_AddItem_Gift_Content, ?ServerStr(42)). %% 激活码奖励物品
+-define(Item_Change_Content_AddItem_VipLevelAward_Content, ?ServerStr(43)). %% vip等级奖励物品
+-define(Item_Change_Content_AddItem_SellItem_Content, ?ServerStr(44)). %% 玩家出售物品
+-define(Item_Change_Content_AddItem_Sort_Content, ?ServerStr(45)). %% 玩家整理背包
+-define(Item_Change_Content_AddItem_Drop_Content, ?ServerStr(46)). %% 玩家掉落物品
+-define(Item_Change_Content_AddItem_Equip_Content, ?ServerStr(47)). %% 玩家穿上装备
+-define(Item_Change_Content_AddItem_GM_Content, ?ServerStr(48)). %% GM添加物品
+-define(Item_Change_Content_AddItem_SpaceRing2Bag_Content, ?ServerStr(49)). %% 空间戒指到背包
+-define(Item_Change_Content_AddItem_MineHouse2Bag_Content, ?ServerStr(50)). %% 探矿仓库到背包
+-define(Item_Change_Content_AddItem_WareHouse2Bag_Content, ?ServerStr(51)). %% 仓库到背包
+-define(Item_Change_Content_AddItem_Trade_Content, ?ServerStr(52)). %% 交易物品
+-define(Item_Change_Content_AddItem_Bag2SpaceRing_Content, ?ServerStr(53)). %% 背包到空间戒指
+-define(Item_Change_Content_AddItem_Bag2WareHouse_Content, ?ServerStr(54)). %% 背包到仓库
+-define(Item_Change_Content_DelItem_RankFightAward_Content, ?ServerStr(55)). %%战斗力排名奖励
+-define(Item_Change_Content_DelItem_RankLevelAward_Content, ?ServerStr(56)). %%等级排名奖励
+-define(Item_Change_Content_DelItem_RankLeagueAward_Content, ?ServerStr(57)). %%帮会排名奖励
+-define(Item_Change_Content_UseBoxItem_Content, ?ServerStr(58)). %%使用宝箱
+-define(Item_Change_Content_VipBuyItem_Content, ?ServerStr(59)). %%vip 快速购买
+-define(Item_Change_Content_VipFirstPay_Content, ?ServerStr(60)). %%vip 首充值奖励
+-define(Item_Change_Content_VipEachPay_Content, ?ServerStr(61)). %%vip 单笔充值奖励
+-define(Item_Change_Content_AddItem_SignIn_Content, ?ServerStr(62)). %%签到奖励
+-define(Item_Change_Content_AddItem_Mail_Content, ?ServerStr(64)).
+-define(Item_Change_Content_AddItem_ShopPack_Content, ?ServerStr(65)). %%商城礼包
+-define(Item_Change_Content_AddItem_Huang_Cheng_Zheng_Ba_Content, ?ServerStr(66)).
+-define(Item_Change_Content_AddItem_League_Shop_Content, ?ServerStr(67)).
+-define(Item_Change_Content_AddItem_gem_exchange_Content, ?ServerStr(68)).
+-define(Item_Change_Content_DelItem_gem_smelt_Content, ?ServerStr(69)).
+-define(Item_Change_Content_AddItem_uc_vip_Content, ?ServerStr(70)).
+-define(Item_Change_Content_ItemExchange_Content, ?ServerStr(71)). %% 兑换物品
+-define(Item_Change_Content_PayRelated_Content, ?ServerStr(72)). %% 日充累充
+-define(Item_Change_Content_DeleteItem_Flower_Content, ?ServerStr(73)). %%赠送鲜花
+-define(Item_Change_Content_Valentine_Content, ?ServerStr(74)). %%七夕巧果
+-define(Item_Change_Content_UseItem_Content, ?ServerStr(75)). %%使用物品
+-define(Item_Change_Content_IllWealth_Content, ?ServerStr(76)). %%天降横财获得
+-define(Item_Change_Content_Wing_Content, ?ServerStr(77)). %%光翼进阶消耗
+-define(Item_Change_Content_Clean_Content, ?ServerStr(78)). %%限时道具清理
+-define(Item_Change_Content_UpdateGift_Content, ?ServerStr(79)). %%更新奖励
+-define(Item_Change_Content_Everyday_Content, ?ServerStr(80)). %%每日必做奖励
+-define(Item_Change_Content_Delete_SalesRoom_Content, ?ServerStr(84)).  %% 拍卖物品
+-define(Item_Change_Content_Add_SalesRoom_Content, ?ServerStr(85)).  %% 购买拍卖行中的物品
+-define(Item_Change_Content_VipEveryDayPay_Content, ?ServerStr(86)). %%vip 每日充值奖励
+-define(Item_Change_Content_EquipAdvance_Comsume, ?ServerStr(87)).  %% 装备洗练消耗
+-define(Item_Change_Content_Pet_Content, ?ServerStr(95)). %%宠物激活
+-define(Item_Change_Content_ServerActivity_Content, ?ServerStr(96)). %%开服庆典
+-define(Item_Change_Content_EquipUpgrade_Content, ?ServerStr(97)). %%装备进阶
+-define(Item_Change_Content_Invite_Content, ?ServerStr(98)). %%邀请
+-define(Item_Change_Content_Achievement_Content, ?ServerStr(99)). %%成就
+-define(Item_Change_Content_Zhaocai_Content, ?ServerStr(100)). %%招财宝
+-define(Item_Change_Content_DeleteItem_EnterCopy_Content, ?ServerStr(101)). %%进入副本扣除道具
+-define(Item_Change_Content_DeleteItem_Open_Hole_Content, ?ServerStr(102)). %% 开孔扣除道具
+-define(Item_Change_Content_Escort_Arrow, ?ServerStr(136)). %%护送美女获得穿云箭
+-define(Item_Change_Content_AddItem_GetImpactLevelAward_Content, ?ServerStr(140)). %% 领取冲级达人奖励
+-define(Item_Change_Content_AddItem_LuxurySignin, ?ServerStr(145)). %% 豪华签到
+-define(Item_Change_Content_AddItem_GetTotalChargeAward_Content, ?ServerStr(146)). %% 领取累计充值奖励
+-define(Item_Change_Content_DelItem_ExchangeWordContent, ?ServerStr(147)). %% 夺宝奇兵兑换
+-define(Item_Change_Content_QuanMinBossContent, ?ServerStr(150)). %% 全民Boss兑换
+-define(Item_Change_Content_SevenDaysCheerContent, ?ServerStr(151)). %% 新服七天乐
+-define(Item_Change_Content_LeagueSignInContent, ?ServerStr(152)). %% 帮会签到
+-define(Item_Change_Content_ItemCompoundContent, ?ServerStr(153)). %% 道具合成
+-define(Item_Change_Content_Huiyaoshi_Smelt_Content, ?ServerStr(160)). %% 辉耀石熔炼
+-define(Item_Change_Content_EquipmentRecycle_Content, ?ServerStr(161)). %% 装备回收
+
+-endif. 
+

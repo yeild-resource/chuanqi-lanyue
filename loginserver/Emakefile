@@ -1,0 +1,9 @@
+{['src/log/*'],	[verbose, report, {outdir, "ebin"}, {i, "include"}, {i, "include/common_include"}]}.
+{['src/mysql_lib/*'],[verbose, report, {outdir, "ebin"}, {i, "include"}, {i, "include/common_include"}]}.
+{['src/platform/*'],[verbose, report, {outdir, "ebin"}, {i, "include"}, {i, "include/common_include"}]}.
+{['src/protocol/*'],[verbose, report, {outdir, "ebin"}, {i, "include"}, {i, "include/common_include"}]}.
+{['src/share_lib/*'],[verbose, report, {outdir, "ebin"}, {i, "include"}, {i, "include/common_include"}]}.
+{['src/web/*'],[verbose, report, {outdir, "ebin"}, {i, "include"}, {i, "include/common_include"}]}.
+{['src/*'],[verbose, report, {outdir, "ebin"}, {i, "include"}, {i, "include/common_include"}]}.
+
+

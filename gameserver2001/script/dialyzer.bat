@@ -1,0 +1,1 @@
+dialyzer --build_plt -r $OTP_HOMEC/lib/kernel-2.15.3/ebin $OTP_HOMEC/lib/stdlib-1.18.3/ebin $OTP_HOMEC/lib/mnesia-4.7.1/ebin

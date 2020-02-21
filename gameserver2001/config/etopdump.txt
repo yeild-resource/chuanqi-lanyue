@@ -1,0 +1,31 @@
+
+========================================================================================
+ gameserver_qanew@tang                                                     07:48:50
+ Load:  cpu        78               Memory:  total      898316    binary        358
+        procs     355                        processes  784463    code        17101
+        runq        0                        atom          485    ets         91400
+
+Pid            Name or Initial Func    Time    Reds  Memory    MsgQ Current Function
+----------------------------------------------------------------------------------------
+<0.208.0>      proc_lib:init_p/5        '-'    705719372352       0 gen_server:loop/6   
+<0.210.0>      proc_lib:init_p/5        '-'   1208019372232       0 gen_server:loop/6   
+<0.211.0>      proc_lib:init_p/5        '-'   1404019371912       0 gen_server:loop/6   
+<0.260.0>      proc_lib:init_p/5        '-'    705716006712       0 gen_server:loop/6   
+<0.262.0>      proc_lib:init_p/5        '-'   1234716006592       0 gen_server:loop/6   
+<0.263.0>      proc_lib:init_p/5        '-'   1404016006272       0 gen_server:loop/6   
+<0.212.0>      proc_lib:init_p/5        '-'    170312343040       0 gen_server:loop/6   
+<0.232.0>      proc_lib:init_p/5        '-'    707912343040       0 gen_server:loop/6   
+<0.236.0>      proc_lib:init_p/5        '-'    689012343040       0 gen_server:loop/6   
+<0.272.0>      proc_lib:init_p/5        '-'    693212343040       0 gen_server:loop/6   
+<0.276.0>      proc_lib:init_p/5        '-'    691012343040       0 gen_server:loop/6   
+<0.234.0>      proc_lib:init_p/5        '-'    720012342920       0 gen_server:loop/6   
+<0.238.0>      proc_lib:init_p/5        '-'    521712342920       0 gen_server:loop/6   
+<0.274.0>      proc_lib:init_p/5        '-'    614612342920       0 gen_server:loop/6   
+<0.278.0>      proc_lib:init_p/5        '-'    449112342920       0 gen_server:loop/6   
+<0.215.0>      proc_lib:init_p/5        '-'     96512342600       0 gen_server:loop/6   
+<0.235.0>      proc_lib:init_p/5        '-'   1404012342600       0 gen_server:loop/6   
+<0.239.0>      proc_lib:init_p/5        '-'   1346512342600       0 gen_server:loop/6   
+<0.275.0>      proc_lib:init_p/5        '-'   1356512342600       0 gen_server:loop/6   
+<0.279.0>      proc_lib:init_p/5        '-'   1368312342600       0 gen_server:loop/6   
+========================================================================================
+

@@ -1,0 +1,127 @@
+[
+{db_ls, db_ls},
+{db_ls_host, "127.0.0.1"},
+{db_ls_port, 3306},
+{db_ls_user, "root"},
+{db_ls_pass, "123456"},
+{db_ls_name, "dragonlogindata"},
+
+
+{db_log, db_log},
+{db_log_host, "127.0.0.1"},
+{db_log_port, 3306},
+{db_log_user, "root"},
+{db_log_pass, "123456"},
+{db_log_name, "dragonloginlog"},
+
+{tcp_client_port, 20011},
+{tcp_accept_gs_ip,"127.0.0.1"},
+{tcp_accept_gs_port, 20012},
+
+{tcp_conn_ps_ip, "127.0.0.1"},
+{tcp_conn_ps_port, 30001},
+
+{tcp_limit_web_ip, "127.0.0.1"},
+{tcp_accept_web_port, 11111},
+
+{notice,"正在维护，详情请查询官方网站。"},
+
+{platform_test_check,0},
+
+{platform_count,22},
+
+{platform_id1,100},
+{platform_ip1,"http://sdk.g.uc.cn/ss"},
+{platform_port1,0},
+
+{platform_id2,101},
+{platform_ip2,"http://sdk.g.uc.cn/ss"},
+{platform_port2,0},
+
+{platform_id3,102},
+{platform_ip3,"http://m.v5game.cn/service/auth/cpcheck/"},
+{platform_port3,0},
+
+
+{platform_id4,103},
+{platform_ip4,"http://service.sj.91.com/usercenter/AP.aspx"},
+{platform_port4,0},
+
+{platform_id5,104},
+{platform_ip5,"https://pay.wandoujia.com/api/uid/check"},
+{platform_port5,0},
+
+{platform_id6,105},
+{platform_ip6,"http://mis.migc.xiaomi.com/api/biz/service/verifySession.do"},
+{platform_port6,0},
+
+{platform_id7,106},
+{platform_ip7,""},
+{platform_port7,0},
+
+{platform_id8,107},
+{platform_ip8,"http://user.anzhi.com/web/api/sdk/third/1/queryislogin"},
+{platform_port8,0},
+
+{platform_id9,108},
+{platform_ip9,"http://sdk.m.duoku.com/openapi/sdk/checksession"},
+{platform_port9,0},
+
+{platform_id10,109},
+{platform_ip10,"http://connect.d.cn/open/member/info/"},
+{platform_port10,0},
+
+{platform_id11,110},
+{platform_ip11,"http://passport.lenovo.com/interserver/authen/1.2/getaccountid"},
+{platform_port11,0},
+
+{platform_id12,111},
+{platform_ip12,"https://id.gionee.com/account/verify.do?s=true"},
+{platform_port12,0},
+  
+{platform_id13,112},
+{platform_ip13,"http://api.appchina.com/appchina-usersdk/user/get.json"},
+{platform_port13,0},
+
+{platform_id14,113},
+{platform_ip14,"http://thapi.nearme.com.cn/account/GetUserInfoByGame"},
+{platform_port14,0},
+
+{platform_id15,114},
+{platform_ip15,"http://m.wan.liebao.cn/user/validate_mutk"},
+{platform_port15,0},
+
+{platform_id16,115},
+{platform_ip16,"http://119.147.19.43/v3/user/is_login"},
+{platform_port16,0},
+
+{platform_id17,116},
+{platform_ip17,"http://app.5gwan.com:9000/user/info.php"},
+{platform_port17,0},
+
+{platform_id18,123},
+{platform_ip18,""},
+{platform_port18,0},
+
+{platform_id19,124},
+{platform_ip19,""},
+{platform_port19,0},
+
+{platform_id20,126},
+{platform_ip20,""},
+{platform_port20,0},
+
+{platform_id21,127},
+{platform_ip21,""},
+{platform_port21,0},
+
+{platform_id22,128},
+{platform_ip22,""},
+{platform_port22,0},
+
+{regionMaxCnt, 3},
+
+{debug_level,5},
+{login_server_id,1},
+{server_sign,"1234567890"}
+].

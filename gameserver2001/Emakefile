@@ -1,0 +1,20 @@
+{ "src/league/*",[verbose,  report, {i, "include"},{i, "include/common_include"}, {outdir, "ebin"}]}.
+{ "src/*", [verbose,  report, {i, "include"},{i, "include/common_include"}, {outdir, "ebin"}]}.
+{"src/ai_lib/*", [verbose,  report, {i, "include"},{i, "include/common_include"}, {outdir, "ebin"}]}.
+{ "src/data/*", [verbose,  report, {i, "include"},{i, "include/common_include"}, {outdir, "ebin"}]}.
+{ "src/frame/*", [verbose,  report, {i, "include"},{i, "include/common_include"}, {outdir, "ebin"}]}.
+{ "src/log/*", [verbose,  report, {i, "include"},{i, "include/common_include"}, {outdir, "ebin"}]}.
+{ "src/map_lib/*", [verbose,  report, {i, "include"},{i, "include/common_include"}, {outdir, "ebin"}]}.
+{ "src/misc_lib/*", [verbose,  report, {i, "include"},{i, "include/common_include"}, {outdir, "ebin"}]}.
+{ "src/mod/*", [verbose,  report, {i, "include"},{i, "include/common_include"}, {outdir, "ebin"}]}.
+{ "src/mysql_lib/*", [verbose,  report, {i, "include"},{i, "include/common_include"}, {outdir, "ebin"}]}.
+{ "src/pp/*", [verbose,  report, {i, "include"},{i, "include/common_include"}, {outdir, "ebin"}]}.
+{ "src/protocol/*", [verbose,  report, {i, "include"},{i, "include/common_include"}, {outdir, "ebin"}]}.
+{ "src/share_lib/*", [verbose,  report, {i, "include"},{i, "include/common_include"}, {outdir, "ebin"}]}.
+{ "src/test/*" , [verbose,  report, {i, "include"},{i, "include/common_include"}, {outdir, "ebin"}]}.
+{ "src/timer/*", [verbose,  report, {i, "include"},{i, "include/common_include"}, {outdir, "ebin"}]}.
+{ "src/gen_server/*", [verbose, report, {i, "include"}, {i, "include/common_include"}, {outdir, "ebin"}]}.
+{ "src/statistics/*", [verbose, report, {i, "include"}, {i, "include/common_include"}, {outdir, "ebin"}]}.
+{ "src/tools/*", [verbose, report, {i, "include"}, {i, "include/common_include"}, {outdir, "ebin"}]}.
+
+

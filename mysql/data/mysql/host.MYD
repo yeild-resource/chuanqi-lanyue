@@ -1,0 +1,3 @@
+200221 16:25:52 [Note] Event Scheduler: Loaded 0 events
+200221 16:25:52 [Note] bin\mysqld.exe: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)

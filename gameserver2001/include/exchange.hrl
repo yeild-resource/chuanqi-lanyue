@@ -1,0 +1,13 @@
+-record(exchange, {id = 0, num = 0}).%%保存exchange 的ID 和已经购买的数量
+
+-define(Exchange_Success, 0).%%兑换成功
+-define(Exchange_NoConfig, -1).%%兑换失败，没配置
+-define(Exchange_ItemNotEnough, -2).%%兑换失败，物品不足
+-define(Exchange_TradeBusy, -3).%%兑换失败，交易忙
+-define(Exchange_PaceNotEnough, -4).%%兑换失败，空间不足
+-define(Exchange_LimitExchange, -5).%%兑换失败，今天兑换次数过多
+-define(Exchange_LevelTooLow, -6).%%等级太低
+-define(Exchange_Expired, -7).%%时间不对，不让兑换
+-define(Exchange_LackGold, -8).%%缺元宝
+-define(Exchange_LackCoin, -9).%%缺金币
+-define(Exchange_BackLuck, -10).%%合成失败，碎了

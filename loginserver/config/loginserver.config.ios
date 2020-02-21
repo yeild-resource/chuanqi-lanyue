@@ -1,0 +1,94 @@
+[
+{db_ls, db_ls},
+{db_ls_host, "127.0.0.1"},
+{db_ls_port, 3306},
+{db_ls_user, "root"},
+{db_ls_pass, "123456"},
+{db_ls_name, "dragonlogindata"},
+
+
+{db_log, db_log},
+{db_log_host, "127.0.0.1"},
+{db_log_port, 3306},
+{db_log_user, "root"},
+{db_log_pass, "123456"},
+{db_log_name, "dragonloginlog"},
+
+{tcp_client_port, 20011},
+{tcp_accept_gs_ip,"127.0.0.1"},
+{tcp_accept_gs_port, 20012},
+
+{tcp_conn_ps_ip, "127.0.0.1"},
+{tcp_conn_ps_port, 30001},
+
+{tcp_limit_web_ip, "127.0.0.1"},
+{tcp_accept_web_port, 11111},
+
+{notice,"正在维护，详情请查询官方网站。"},
+
+{platform_test_check,0},
+
+{platform_count,14},
+
+{platform_id1,100},
+{platform_ip1,"http://sdk.g.uc.cn/ss"},
+{platform_port1,0},
+
+{platform_id2,201},
+{platform_ip2,"124.202.143.76"},
+{platform_port2,9993},
+
+{platform_id3,203},
+{platform_ip3,"http://service.sj.91.com/usercenter/AP.aspx"},
+{platform_port3,0},
+
+{platform_id4,209},
+{platform_ip4,"http://connect.d.cn/open/member/info/"},
+{platform_port4,0},
+
+{platform_id5,217},
+{platform_ip5,""},
+{platform_port5,0},
+
+{platform_id6,218},
+{platform_ip6,""},
+{platform_port6,0},
+
+{platform_id7,219},
+{platform_ip7,""},
+{platform_port7,0},
+
+{platform_id8,221},
+{platform_ip8,""},
+{platform_port8,0},
+
+{platform_id9,220},
+{platform_ip9,""},
+{platform_port9,0},
+
+{platform_id10,223},
+{platform_ip10,""},
+{platform_port10,0},
+
+{platform_id11,224},
+{platform_ip11,""},
+{platform_port11,0},
+
+{platform_id12,225},
+{platform_ip12,""},
+{platform_port12,0},
+
+{platform_id13,222},
+{platform_ip13,""},
+{platform_port13,0},
+
+{platform_id14,226},
+{platform_ip14,""},
+{platform_port14,0},
+
+{regionMaxCnt, 3},
+
+{debug_level,5},
+{login_server_id,1},
+{server_sign,"1234567890"}
+].
