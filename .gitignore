@@ -2,3 +2,4 @@
 *.pid
 mysql/data/*.err
 *.log
+*.apk
