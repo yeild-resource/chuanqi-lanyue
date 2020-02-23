@@ -1,4 +1,6 @@
 #!/bin/sh
+#!/usr/bin/sh
+#!/bin/bash
 cur_path=$(cd `dirname $0`; pwd)
 
 echo "init mysql"
@@ -35,9 +37,20 @@ cd apache2
 cat << EOF > "lanyue.conf"
 <VirtualHost *:80>
     DocumentRoot ${cur_path}/wwwroot
-    ServerName lanyue.chuanqi.yeild.top
+    ServerName lanyue.mir.yeild.top
 </VirtualHost>
 EOF
 echo "IncludeOptional ${cur_path}/apache2/lanyue.conf" >> /etc/httpd/conf/httpd.conf
 
 cd ..
+
+yum install -y ncurses-devel xmlto perl
+wget -c http://erlang.org/download/otp_src_18.0.tar.gz -O otp_src_18.0.tar.gz
+tar zxvf otp_src_18.0.tar.gz
+cd otp_src_18.0
+./configure --prefix=${cur_path}/erlang
+make && make install
+cd .. && rm -rf otp_src_18.0* 
+
+echo "export PATH=${cur_path}/erlang/bin:\$PATH" >> /etc/profile
+source /etc/profile
