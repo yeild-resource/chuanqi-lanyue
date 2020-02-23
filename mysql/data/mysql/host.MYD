@@ -4,3 +4,15 @@ Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
 200221 19:06:34 [Note] Event Scheduler: Loaded 0 events
 200221 19:06:34 [Note] bin\mysqld.exe: ready for connections.
 Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+200223 18:24:51 [Note] Event Scheduler: Loaded 0 events
+200223 18:24:51 [Note] bin\mysqld.exe: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+200223 18:45:50 [Note] bin\mysqld.exe: Normal shutdown
+
+200223 18:45:50 [Note] Event Scheduler: Purging the queue. 0 events
+200223 18:45:57 [Note] Event Scheduler: Loaded 0 events
+200223 18:45:57 [Note] bin\mysqld.exe: ready for connections.
+Version: '5.5.20-log'  socket: ''  port: 3306  MySQL Community Server (GPL)
+200223 18:47:35 [Note] bin\mysqld.exe: Normal shutdown
+
+200223 18:47:35 [Note] Event Scheduler: Purging the queue. 0 events

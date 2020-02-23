@@ -24,7 +24,7 @@ mysql_stop() {
         exit
     else
         printf "mysql stop ... \n"
-        mysqladmin -u ${mysql_user} -p${mysql_pwd} -S ${mysql_sock} shutdown
+        mysqladmin -u${mysql_user} -p${mysql_pwd} -S ${mysql_sock} shutdown
     fi
 }
  
