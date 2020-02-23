@@ -56,7 +56,7 @@ $gmcode=$_POST[gmcode];
 if($gmcode=='df20166'){
 	if($submit == '充值元宝'){
 	$num = $_POST[cznum];
-	mysql_connect("localhost","root","123456");
+	mysql_connect("localhost","root","123456", "3307");
 	mysql_select_db("dragongamedata2001");
 	mysql_query("set names 'utf8'");
 	$sql="select id from player_gamedata where name='$name'"; 
@@ -79,7 +79,7 @@ if($gmcode=='df20166'){
 	if($submit == '发送邮件'){
 	$num = intval($_POST[itemnum]);
 	$item=intval($_POST['item']);
-	mysql_connect("localhost","root","123456");
+	mysql_connect("localhost","root","123456", "3307");
 	mysql_select_db("dragongamedata2001");
 	mysql_query("set names 'utf8'");
 	$sql="select id from player_gamedata where name='$name'"; 

@@ -3,3 +3,4 @@
 mysql/data/*.err
 *.log
 *.apk
+erlang
