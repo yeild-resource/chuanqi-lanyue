@@ -31,12 +31,12 @@
   </OnlineTranslation>
   <SearchAndReplaceLog>
     <SearchLog>
-      <Search0 value="192.168.1.11" />
-      <Search1 value="lanyue.yeild.top" />
+      <Search0 value="lanyue.yeild.top" />
+      <Search1 value="192.168.1.11" />
     </SearchLog>
     <ReplaceLog>
-      <Replace0 value="lanyue.yeild.top" />
-      <Replace1 value="192.168.3.105" />
+      <Replace0 value="192.168.3.105" />
+      <Replace1 value="lanyue.yeild.top" />
     </ReplaceLog>
   </SearchAndReplaceLog>
   <RegularExpression>
