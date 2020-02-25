@@ -2,6 +2,18 @@
 #!/usr/bin/sh
 #!/bin/bash
 cur_path=$(cd `dirname $0`; pwd)
+cd $cur_path
+
+chmod 755 start.sh
+chmod 755 stop.sh
+
+cd ../loginserver
+chmod 755 start.sh
+chmod 755 stop.sh
+
+cd ../gameserver2001
+chmod 755 start.sh
+chmod 755 stop.sh
 
 echo "init mysql"
 cd mysql
