@@ -39,11 +39,11 @@
 {pay_rebate_end_timestamp,  1400515200},
 
 {tcp_accept_user_port, 6669},
-{tcp_accept_user_ip, "192.168.1.115"},
+{tcp_accept_user_ip, "lanyue.mir.yeild.top"},
 {gameserver_display_name, "nothing"},
 
 {tcp_accept_gs_port,20012},
-{tcp_accept_gs_ip,"192.168.1.115"},
+{tcp_accept_gs_ip,"lanyue.mir.yeild.top"},
 {cross_server_flag, 0},
 {cross_node, 'test@127.0.0.1'}
 ].
